@@ -1,0 +1,1061 @@
+  284  clear
+  285  cd ~
+  286  docker images
+  287  docker rm -i hello-world
+  288  docker rmi hello-world
+  289  ping 172.17.0.2
+  290  docker ps
+  291  docker ps -a
+  292  docker rm ser2
+  293  docker rm ser1
+  294  docker ps -a
+  295  docker pull nginx
+  296  docker image inspect ngixn
+  297  docker image inspect nginx
+  298  mkdir Day2
+  299  cd Day2/
+  300  ll
+  301  cd ..
+  302  ll
+  303  cd /home/trainer/vinodh/
+  304  ll
+  305  mkdir Day2
+  306  cd Day
+  307  cd Day2
+  308  ll
+  309  pwd
+  310  vim hosts
+  311  ll
+  312  rm -f :wq
+  313  ll
+  314  vim hosts 
+  315  vim /etc/hosts
+  316  vim /etc/ansible/hosts
+  317  ansible --version
+  318  apt-get update ansible
+  319  yum update ansible
+  320  rpm -qa ansible
+  321  cat hosts
+  322  docker ps
+  323  ansible -i hosts all -m ping
+  324  netstat -tunlp | grep listen
+  325  docker images
+  326  docker start verizon/andible-ubuntu
+  327  docker run verizon/andible-ubuntu
+  328  docker images
+  329  docker run -d --name=server1 verizon/andible-ubuntu
+  330  docker ps
+  331  docker rm 19d60d16b154
+  332  docker stop 19d60d16b154
+  333  docker rm 19d60d16b154
+  334  docker ps
+  335  docker stop eda48e5abac0
+  336  docker ps -a
+  337  docker ps
+  338  docker run -d --name=anisble1 -p 2000:22 -p 8000:80 verizon/andible-ubuntu
+  339  docker ps
+  340  netstat -ntlp
+  341  cd /home/trainer/
+  342  cd vinodh/
+  343  cd Day2/
+  344  ll
+  345  vim hosts 
+  346  ansible -i hosts all -m ping
+  347  vim ../Day1/CustomAnsibleUbuntuImage/ubuntu-ansible/Dockerfile 
+  348  ansible -i hosts ubuntu1 -m ping
+  349  ansible -i hosts ansible1 -m ping
+  350  ansible -i hosts ansible1 -m ping -v
+  351  ansible -i hosts ansible1 -m ping -vvv
+  352  ansible -i hosts ansible1 -m ping -vv
+  353  ansible -i hosts ansible1 -m ping -vvv
+  354  ansible -i hosts ansible1 -m ping -vvvv
+  355  ansible -i hosts ansible1 -m ping -vvvvv
+  356  ansible -i hosts ansible1 -m ping -vv
+  357  cd usr/lib/python2.7/site-packages/ansible
+  358  cd /usr/lib/python2.7/site-packages/ansible
+  359  ll
+  360  cd module
+  361  cd modules
+  362  ll
+  363  cd system/
+  364  ll
+  365  ll | grep ping
+  366  vim ping.py
+  367  cd ~/Day2/
+  368  ll
+  369  cd /home/trainer/vinodh/Day2/
+  370  ll
+  371  vim hosts
+  372  set -o vim
+  373  set -o vi
+  374  ansible -i hosts ansible1 -m shell -a "ls -l"
+  375  ansible -i hosts ansible1 -m shell -a "ls -lR"
+  376  ansible -i hosts ansible1 -m shell -a "ls -lR /"
+  377  ansible -i hosts ansible1 -m shell -a "ls -lR /tmp"
+  378  ansible -i hosts ansible1 -m shell -a "hostname"
+  379  ansible -i hosts ansible1 -m shell -a "uptime"
+  380  ansible -i hosts ansible1 -m shell -a "whoami"
+  381  ansible-doc -l
+  382  andnasdfasdfad
+  383  andasdf
+  384* 
+  385  \\\\
+  386  
+  387  
+  388  EXIT
+  389  docker ps
+  390  docker run -d --name=anisble1 -p 2000:22 -p 8000:80 verizon/andible-ubuntu
+  391  docker ps -a
+  392  docker run -d --name=ansible1 -p 2000:22 -p 8000:80 verizon/andible-ubuntu
+  393  docker run -d --name=ansible2 -p 2001:22 -p 8001:80 verizon/andible-ubuntu
+  394  docker ps
+  395  cd /home/trainer/
+  396  ll
+  397  cd vinodh/
+  398  cd Day2/
+  399  ll
+  400  vim hosts
+  401  ll
+  402  vim ping.yml
+  403  ansible-playbook -i hosts ping.yml
+  404  vim ping.yml 
+  405  ansible-playbook -i hosts ping.yml
+  406  vim ping.yml 
+  407  ansible-playbook -i hosts ping.yml
+  408  vim ping.yml 
+  409  rm -f .ping.yml.swp 
+  410  vim ping.yml 
+  411  ansible-playbook -i hosts ping.yml
+  412  vim ping.yml 
+  413  docker ps
+  414  vim ping.yml 
+  415  ansible-playbook -i hosts ping.yml
+  416  vim ping.yml 
+  417  ansible-playbook -i hosts ping.yml
+  418  vim ping.yml 
+  419  ansible-playbook -i hosts ping.yml
+  420  vim ping.yml 
+  421  ansible-playbook -i hosts ping.yml
+  422  vim install_tree_and_vim_tools.yml
+  423  ansible-playbook -i hosts ping.yml
+  424  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  425  vim install_tree_and_vim_tools.yml 
+  426  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  427  vim install_tree_and_vim_tools.yml 
+  428  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  429  vim install_tree_and_vim_tools.yml 
+  430  echo $ANSIBLE_CONFIG
+  431  vim /etc/ansible/ansible.cfg 
+  432  vim install_tree_and_vim_tools.yml 
+  433  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  434  vim install_tree_and_vim_tools.yml 
+  435  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  436  vim ansible.cfg
+  437  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  438  docker run -d --name=ansible3 -p 2003:22 -p 8003:80 verizon/andible-ubuntu
+  439  docker ps
+  440  vim hosts
+  441  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  442  docker ps
+  443  vim hosts
+  444  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  445  vim hosts
+  446  ansible-playbook -i hosts install_tree_and_vim_tools.yml 
+  447  ansible all -m ping
+  448  docker search windows
+  449  docker pull microsoft/windowsservercore
+  450  echo $DOCKER_HOST
+  451  docker --help
+  452  docker stats
+  453  ll
+  454  vim hosts 
+  455  vim install_tree_and_vim_tools.yml 
+  456  ansible -i install_tree_and_vim_tools.yml 
+  457  ansible install_tree_and_vim_tools.yml 
+  458  ansible-playbook install_tree_and_vim_tools.yml 
+  459  vim install_tree_and_vim_tools.yml 
+  460  ansible-playbook install_tree_and_vim_tools.yml 
+  461  vim hosts
+  462  vim install_tree_and_vim_tools.yml 
+  463  vim hosts
+  464  vim install_tree_and_vim_tools.yml 
+  465  vim instanginx.yml
+  466  ansible-playbook instanginx.yml 
+  467  vim hosts
+  468  ansible-playbook instanginx.yml 
+  469  vim ansible.cfg 
+  470  vim hosts
+  471  cp hosts hosts.bkup
+  472  vim hosts
+  473  ansible-playbook instanginx.yml 
+  474  vim hosts
+  475  ansible-playbook instanginx.yml 
+  476  vim hosts
+  477  ansible-playbook instanginx.yml 
+  478  vim hosts
+  479  vim instanginx.yml 
+  480  ansible-playbook instanginx.yml 
+  481  vim instanginx.yml 
+  482  docker exec -it ansible1
+  483  docker ps
+  484  docker exec -it ansible1
+  485  docker exec -it ca9d1370dd78
+  486  docker exec -it ansible1
+  487  docker exec -it ansible1 bash
+  488  docker cp ansible1:/etc/nginx/nginx.conf .
+  489  ll
+  490  rm -f hosts.bkup 
+  491  docker cp ansible1:/etc/nginx/sites-available/default .
+  492  ll
+  493  vim default 
+  494  docker ps
+  495  docker stop ansible1
+  496  docker stop ansible2
+  497  docker stop ansible3
+  498  docker ps -aq
+  499  docker rm $'docker ps -aq'
+  500  docker rm $(docker ps -aq)
+  501  docker run -d --name=ansible1 -p 2003:22 -p 8003:80 -v /home/trainer/Day2:/var/html verizon/andible-ubuntu
+  502  docker stop ansible1
+  503  docker rm ansible1
+  504  docker run -d --name=ansible1 -p 2001:22 -p 8001:80 -v /home/trainer/Day2:/var/html verizon/andible-ubuntu
+  505  docker run -d --name=ansible2 -p 2002:22 -p 8002:80 -v /home/trainer/Day2:/var/html verizon/andible-ubuntu
+  506  docker run -d --name=ansible3 -p 2003:22 -p 8003:80 -v /home/trainer/Day2:/var/html verizon/andible-ubuntu
+  507  docker exec -it ansible3 bash
+  508  docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+  509  docker ps
+  510  docker ps -a
+  511  docker run -d --name=ansible1 -p 2001:22 -p 8001:80 -v /home/trainer/vinodh/Day2:/var/html verizon/andible-ubuntu
+  512  docker run -d --name=ansible1 -p 2002:22 -p 8002:80 -v /home/trainer/vinodh/Day2:/var/html verizon/andible-ubuntu
+  513  docker run -d --name=ansible2 -p 2002:22 -p 8002:80 -v /home/trainer/vinodh/Day2:/var/html verizon/andible-ubuntu
+  514  docker run -d --name=ansible3 -p 2003:22 -p 8003:80 -v /home/trainer/vinodh/Day2:/var/html verizon/andible-ubuntu
+  515  docker ps
+  516  vim hosts
+  517  vim instanginx.yml 
+  518  vim index.html
+  519  vim instanginx.yml 
+  520  ansible-doc service
+  521  vim instanginx.yml 
+  522  ansible-playbook instanginx.yml 
+  523  vim instanginx.yml 
+  524  ansible-playbook instanginx.yml 
+  525  vim instanginx.yml 
+  526  ansible-playbook instanginx.yml 
+  527  vim instanginx.yml 
+  528  ansible-playbook instanginx.yml 
+  529  vim instanginx.yml 
+  530  ansible-playbook instanginx.yml 
+  531  vim instanginx.yml 
+  532  ansible-playbook instanginx.yml 
+  533  vim instanginx.yml 
+  534  ansible-playbook instanginx.yml 
+  535  vim instanginx.yml 
+  536  ansible-playbook instanginx.yml 
+  537  vim instanginx.yml 
+  538  ansible-playbook instanginx.yml 
+  539  vim instanginx.yml 
+  540  ansible-playbook instanginx.yml 
+  541  vim index.html 
+  542  vim hosts
+  543  ansible-playbook instanginx.yml 
+  544  mkdir host_vars
+  545  mkdir group_vars
+  546  cd host_vars/
+  547  ll
+  548  mkdir server1 server2
+  549  rm -rf server1
+  550  rm -rf server2
+  551  mkdir ansible1
+  552  mkdir ansible2
+  553  mkdir ansible3
+  554  cd ansible1/
+  555  vim port
+  556  cd ..
+  557  cd ansible2/
+  558  vim port
+  559  cd ..
+  560  cd ansible3/
+  561  vim port
+  562  cd ..
+  563  cd group_vars/
+  564  vim allvars
+  565  cd ..
+  566* 
+  567  vim hosts
+  568  ansible-playbook instanginx.yml 
+  569  vim hosts
+  570  ansible-playbook instanginx.yml 
+  571  cd host_vars/
+  572  ll
+  573  mv ansible1/port ./ansible1
+  574  mv ansible1/port ./
+  575  ll
+  576  rm -rf ansible1
+  577  rm -rf ansible2
+  578  rm -rf ansible3
+  579  mv port ansible1
+  580  vim ansible1 
+  581  cp ansible1 ansible2
+  582  cp ansible1 ansible3
+  583  vim ansible2
+  584  vim ansible3
+  585  cd ..
+  586  ansible-playbook instanginx.yml 
+  587  cd group_vars/
+  588  ll
+  589  mkdir all
+  590  mv allvars allvars/
+  591  mv allvars all/
+  592  cd all/
+  593  cd ..
+  594  ll
+  595  cd ..
+  596  ll
+  597  vim hosts
+  598  ansible-playbook instanginx.yml 
+  599  vim hosts
+  600  cd host_vars/
+  601  ll
+  602  vim hosts
+  603  cd ..
+  604  vim hosts
+  605  cd host_vars/
+  606  ll
+  607  cd ..
+  608  tree
+  609  yum install tree
+  610  tree
+  611  cd group_vars/
+  612  ll
+  613  cp all/allvars .
+  614  rm -rf all
+  615  mv allvars all
+  616  cd ..
+  617  ansible all -m ping
+  618  cd host_vars/
+  619  vim ansible
+  620  ll
+  621  vim ansible1 
+  622  vim ansible2
+  623  vim ansible3
+  624  ansible all -m ping
+  625  docker ps
+  626  cd ..
+  627  vim hosts
+  628  tree
+  629  cat group_vars/all 
+  630  cat host_vars/ansible*
+  631  ll
+  632* 
+  633  ansible all -m ping
+  634  vim hosts 
+  635  ansible all -m ping
+  636  ansible-playbook instanginx.yml 
+  637  vim instanginx.yml 
+  638  ansible-playbook instanginx.yml 
+  639  vim instanginx.yml 
+  640  ansible-playbook instanginx.yml 
+  641  vim instanginx.yml 
+  642  ansible-playbook instanginx.yml 
+  643  vim instanginx.yml 
+  644  vim nginx.conf 
+  645  vim instanginx.yml 
+  646  ansible-playbook instanginx.yml 
+  647  vim instanginx.yml 
+  648  ansible-playbook instanginx.yml 
+  649  ll
+  650  cd ..
+  651  mkdir Day3
+  652  history
+  653  cd Day2/
+  654  ll
+  655  history >> Day1andDay2Commands-2.txt 
+  656  ll
+  657  vim Day1andDay2Commands-2.txt 
+  658  cd ..
+  659  cd Day3/
+  660  git clone https://github.com/tektutor/centos-sshd-passwordless.git
+  661  ll
+  662  cd centos-sshd-passwordless/
+  663  ll
+  664  vim sshd_config 
+  665  vim Dockerfile 
+  666  cp /root/.ssh/id_rsa.pub authorized_keys
+  667  ll
+  668  vim ansible.cfg 
+  669  vim Dockerfile 
+  670  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  671  docker images
+  672  docker rmi ubuntu
+  673  docker rmi centos
+  674  docker images
+  675  vim Dockerfile 
+  676  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  677  vim Dockerfile 
+  678  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  679  vim Dockerfile 
+  680  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  681  vim Dockerfile 
+  682  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  683  vim Dockerfile 
+  684  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  685  vim Dockerfile 
+  686  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  687  vim Dockerfile 
+  688  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  689  vim Dockerfile 
+  690  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  691  vim Dockerfile 
+  692  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  693  vim Dockerfile 
+  694  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  695  docker images
+  696  docker run -d --name=ansible-cent1 -p 5001:22 -p 8001:80 verizon/ansible-centos
+  697  docker run -d --name=ansible-cent1 -p 5001:22 -p 9001:80 verizon/ansible-centos
+  698  docker rm ansible-cent1
+  699  docker run -d --name=ansible-cent1 -p 5001:22 -p 9001:80 verizon/ansible-centos
+  700  docker exec -it ansible-cent1 bash
+  701  docker ps
+  702  docker stop ansible1
+  703  docker stop ansible2
+  704  docker stop ansible3
+  705  docker ps
+  706  docker run -d --name=ansible-cent1 -p 5001:22 -p 9001:80 verizon/ansible-centos
+  707  docker rm ansible-cent1
+  708  vim Dockerfile 
+  709  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  710  vim Dockerfile 
+  711  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  712  vim Dockerfile 
+  713  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  714  docker run -d --name=ansible-cent1 -p 5001:22 -p 9001:80 verizon/ansible-centos
+  715  docker ps
+  716  vim Dockerfile 
+  717  docker rmi verizon/ansible-centos:latest 
+  718  docker rm ansible-cent1
+  719  docker rmi verizon/ansible-centos:latest 
+  720  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  721  docker build -t verizon/ans-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  722  vim Dockerfile 
+  723  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  724  vim Dockerfile 
+  725  docker build -t verizon/ansible-centos /home/trainer/vinodh/Day3/centos-sshd-passwordless/
+  726  docker run -d --name=centos1 -p 222:22 -p 800:80 verizon/ansible-centos
+  727  docker ps
+  728  docker run -d --name=centos2 -p 222:22 -p 800:80 verizon/ansible-centos
+  729  docker run -d --name=centos2 -p 223:22 -p 801:80 verizon/ansible-centos
+  730  docker rm centso2
+  731  docker rm centos2
+  732  docker run -d --name=centos2 -p 223:22 -p 801:80 verizon/ansible-centos
+  733  docker run -d --name=centos3 -p 224:22 -p 802:80 verizon/ansible-centos
+  734  docker ps
+  735  docker run -d --name=ubuntu1 -p 2022:22 -p 8000:80 verizon/andible-ubuntu
+  736  docker ps
+  737  docker run -d --name=ubuntu2 -p 2023:22 -p 8001:80 verizon/andible-ubuntu
+  738  docker run -d --name=ubuntu2 -p 2024:22 -p 8002:80 verizon/andible-ubuntu
+  739  docker run -d --name=ubuntu3 -p 2024:22 -p 8002:80 verizon/andible-ubuntu
+  740  docker ps
+  741  vim inventory 
+  742  ll
+  743  vim ../../Day2/hosts 
+  744  vim ../../Day2/group_vars/all 
+  745  vim inventory 
+  746  ansible all -m ping
+  747  docker ps
+  748  vim inventory 
+  749  vim ansible.cfg 
+  750  docker exect -it centos1 bash
+  751  docker exec -it centos1 bash
+  752  vim ansible.cfg 
+  753  vim inventory 
+  754  ansible all -m ping
+  755  vim inventory 
+  756  ansible all -m ping
+  757  vim inventory 
+  758  ansible all -m ping
+  759  vim ansible.cfg 
+  760  ansible all -m ping
+  761  ll
+  762  mv inventory hosts
+  763  vim ansible.cfg 
+  764  ansible all -m ping
+  765  docker ps
+  766  vim ansible.cfg 
+  767  vim hosts 
+  768  ansible all -m ping
+  769  vim hosts 
+  770  ll
+  771  vim hosts 
+  772  ansible all -m ping
+  773  vim hosts 
+  774  docker ps
+  775  vim hosts 
+  776  ansible all -m ping
+  777  vim hosts 
+  778  ansible all -m ping
+  779  cp ../../Day2/instanginx.yml ./installnginx.yml
+  780  ll
+  781  vim installnginx.yml 
+  782  vim index.html.j2
+  783  cp ../../Day2/default ./default_ubuntu.conf
+  784  cp ../../Day2/default ./default_nginx.conf
+  785  vim installnginx.yml 
+  786  vim index.html.j2 
+  787  vim installnginx.yml 
+  788  vim default_nginx.conf 
+  789  vim installnginx.yml 
+  790  ansible all -m ping
+  791  ll
+  792  vim default_nginx.conf 
+  793  vim installnginx.yml 
+  794  ansible-playbook installnginx.yml 
+  795  vim installnginx.yml 
+  796  ansible-playbook installnginx.yml 
+  797* 
+  798  vim installnginx.yml 
+  799  vim efault_centos.conf
+  800  vim installnginx.yml 
+  801  vim default_centos.conf
+  802  mv default_nginx.conf default_centos.conf
+  803  ansible-playbook installnginx.yml 
+  804  vim installnginx.yml 
+  805  ansible-playbook installnginx.yml 
+  806  docker ps
+  807  vim installnginx.yml 
+  808  ansible-playbook installnginx.yml 
+  809  docker ps
+  810  vim installnginx.yml 
+  811  vim default_centos.conf 
+  812  vim default_ubuntu.conf 
+  813  ansible-playbook installnginx.yml 
+  814  vim index.html.j2 
+  815  vim installnginx.yml 
+  816  ansible centos1 -m setup
+  817  ansible centos1 -m setup | grep IP
+  818  ansible centos1 -m setup | grep 10.17
+  819  ansible centos1 -m setup | grep address
+  820  vim installnginx.yml 
+  821  ansible centos1 -m setup | grep Ansible
+  822  ansible centos1 -m setup | grep distribution
+  823  vim installnginx.yml 
+  824  vim index.html.j2 
+  825  ansible centos1 -m setup | grep address
+  826  ansible ubuntu1 -m setup | grep address
+  827  ansible ubuntu1 -m setup | grep ip4
+  828  ansible ubuntu1 -m setup | grep ipv4
+  829  ansible ubuntu1 -m setup
+  830  vim index.html.j2 
+  831  vim installnginx.yml 
+  832  vim index.html.j2 
+  833  ansible-playbook installnginx.yml 
+  834  vim index.html.j2 
+  835  vim installnginx.yml 
+  836  ansible-playbook installnginx.yml 
+  837  vim installnginx.yml 
+  838  ansible-playbook installnginx.yml 
+  839  vim index.html.j2 
+  840  vim installnginx.yml 
+  841  ansible-playbook installnginx.yml 
+  842  ll
+  843  vim hosts 
+  844  ansible-playbook installnginx.yml 
+  845  vim loops.yml
+  846  ansible-playbook loops.yml 
+  847  vim loops.yml
+  848  ansible-playbook loops.yml 
+  849  vim loops.yml
+  850  ansible-playbook loops.yml 
+  851  vim loops.yml
+  852  ansible-playbook loops.yml 
+  853  vim loops.yml
+  854  vim provisioncontainers.yml
+  855  docker stop $(docker ps -aq)
+  856  docker ps
+  857  docker ps -a
+  858  docker rm $(docker ps -aq)
+  859  vim provisioncontainers.yml
+  860  docker images
+  861  vim provisioncontainers.yml
+  862  pip
+  863  yum install pip
+  864  yum install epel-release
+  865  yum install python
+  866  yum install python-pip
+  867  pip install docker-py
+  868  ll
+  869  ansible-playbook provisioncontainers.yml 
+  870  vim provisioncontainers.yml 
+  871  ansible-playbook provisioncontainers.yml 
+  872  docker ps
+  873  vim provisioncontainers.yml 
+  874  ansible-playbook provisioncontainers.yml 
+  875  docker ps
+  876  docker ps -a
+  877  vim provisioncontainers.yml 
+  878  docker ps -a
+  879  ansible-playbook provisioncontainers.yml 
+  880  docker ps -a
+  881  docker ps
+  882  vim provisioncontainers.yml 
+  883  ansible-playbook provisioncontainers.yml 
+  884  docker ps
+  885  ansible-playbook provisioncontainers.yml 
+  886  vim provisioncontainers.yml 
+  887  ansible-playbook provisioncontainers.yml 
+  888  docker ps
+  889  vim provisioncontainers.yml 
+  890  ansible-playbook provisioncontainers.yml 
+  891  docker ps
+  892  vim provisioncontainers.yml 
+  893  ansible-playbook provisioncontainers.yml --extra-vars "state=stopped"
+  894  vim provisioncontainers.yml 
+  895  ansible-playbook provisioncontainers.yml --extra-vars "state=stopped"
+  896  vim provisioncontainers.yml 
+  897  ansible-playbook provisioncontainers.yml --extra-vars "getstate=stopped"
+  898  vim provisioncontainers.yml 
+  899  ansible-playbook provisioncontainers.yml --extra-vars "getstate=stopped"
+  900  vim provisioncontainers.yml 
+  901  ansible-playbook provisioncontainers.yml --extra-vars "getstate=stopped"
+  902  docker ps -a
+  903  docker ps
+  904  ansible-playbook provisioncontainers.yml --extra-vars "getstate=started"
+  905  vim provisioncontainers.
+  906  vim provisioncontainers.yml 
+  907  ansible-playbook provisioncontainers.yml --extra-vars "getstate=started"
+  908  ansible-playbook provisioncontainers.yml --extra-vars "getstate=absent"
+  909  ansible-playbook provisioncontainers.yml --extra-vars "getstate=started"
+  910  ansible-playbook provisioncontainers.yml --extra-vars "getstate=absent"
+  911  vim provisioncontainers.yml 
+  912  ansible-playbook provisioncontainers.yml --extra-vars "getstate=started"
+  913  docker stats
+  914  free -m
+  915  ansible-playbook provisioncontainers.yml --extra-vars "getstate=absent"
+  916  docker ps
+  917  docker ps -a
+  918  vim provisioncontainers.yml 
+  919  vim lists.yml
+  920  vim provisioncontainers.yml 
+  921  ansible-playbook provisioncontainers.yml --extra-vars "getstate=started"
+  922  dockser ps
+  923  docker ps
+  924  vim lists.yml
+  925  ansible-playbook lists.yml 
+  926  vim lists.yml
+  927  ansible-playbook lists.yml 
+  928  vim lists.yml
+  929  ansible-playbook lists.yml 
+  930  vim hosts
+  931* 
+  932  vim hosts
+  933  ansible all -m ping
+  934  ansible-playbook lists.yml 
+  935  vim hosts
+  936  vim lists.yml 
+  937  ansible-playbook lists.yml 
+  938  vim lists.yml 
+  939  ansible-playbook lists.yml 
+  940  vim lists.yml 
+  941  ansible-playbook lists.yml 
+  942  vim lists.yml 
+  943  ansible-playbook lists.yml 
+  944  vim lists.yml 
+  945  ansible-playbook lists.yml 
+  946  ls -l
+  947  docker exec -t centos1 bash
+  948  vim
+  949  ansible-playbook lists.yml 
+  950  vim lists.yml 
+  951  ansible-playbook lists.yml 
+  952  vim lists.yml 
+  953  docker exec -t centos1 bash
+  954  docker exec -t centos1 /bin/sh
+  955  docker exec -t centos1 bash
+  956  docker exec -t centos2 bash
+  957  docker exec -it centos2 bash
+  958  docker exec -it centos1 bash
+  959  ansible-playbook lists.yml 
+  960  docker exec -it centos1 bash
+  961  vim lists.yml 
+  962  vim contacts
+  963  vim printcontacts.yml
+  964  vim contacts
+  965  vim printcontacts.yml
+  966  ansible-playbook printcontacts.yml 
+  967  vim lists.yml 
+  968  ansible --version
+  969  yum update ansible
+  970  ansible-playbook printcontacts.yml 
+  971  docker ps
+  972  cd ..
+  973  ll
+  974  history >> Dat1to3Commands.txt
+  975  vim Dat1to3Commands.txt 
+  976  cd ..
+  977  mkdir Day4
+  978  cd Day
+  979  cd Day4/
+  980  docker run --name verizon-mysql -e MYSQL_ROOT_PASSWORD=verizon123 -d mysql
+  981  docker ps
+  982  dpress
+  983  Then, access it via http://localhost:8080 or http://host-ip:8080 in a browser.
+  984  If you'd like to use an external database instead of a linked mysql container, specify the hostname and port with WORDPRESS_DB_HOST along with the password in WORDPRESS_DB_PASSWORD and the username in WORDPRESS_DB_USER (if it is something other than root):
+
+$ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
+    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+
+Docker Secrets
+
+As an alternative to passing sensitive information via environment variables, _FILE may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in /run/secrets/<secret_name> files. For example:
+
+$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d wordpress:tag
+
+Currently, this is supported for WORDPRESS_DB_HOST, WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD, WORDPRESS_DB_NAME, WORDPRESS_AUTH_KEY, WORDPRESS_SECURE_AUTH_KEY, WORDPRESS_LOGGED_IN_KEY, WORDPRESS_NONCE_KEY, WORDPRESS_AUTH_SALT, WORDPRESS_SECURE_AUTH_SALT, WORDPRESS_LOGGED_IN_SALT, WORDPRESS_NONCE_SALT, WORDPRESS_TABLE_PREFIX, and WORDPRESS_DEBUG.
+... via docker stack deploy or docker-compose
+
+Example stack.yml for wordpress:
+
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+Run docker stack deploy -c stack.yml wordpress (or docker-compose -f stack.yml up), wait for it to initialize completely, and visit http://swarm-ip:8080, http://localhost:8080, or http://host-ip:8080 (as appropriate).
+Adding additional libraries / extensions
+
+This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
+
+If you need additional PHP extensions, you'll need to create your own image FROM this one. The documentation of the php image explains how to compile additional extensions. Additionally, the wordpress Dockerfile has an example of doing this.
+  985  The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
+  986      Automated Builds let Docker Hub automatically build your Dockerfile each time you push changes to it.
+  987      Repository Links can ensure that your image is also rebuilt any time wordpress is updated.
+  988  Running as an arbitrary user
+  989  See the "Running as an arbitrary user" section of the php image documentation.
+  990  Image Variants
+  991  The wordpress images come in many flavors, each designed for a specific use case.
+  992  wordpress:<version>
+  993  This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+  994  wordpress:alpine
+  995  This image is based on the popular Alpine Linux project, available in the alpine official image. Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+  996  This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use musl libc instead of glibc and friends, so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See this Hacker News comment thread for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To mini
+wordpress:cli
+
+This image variant does not contain WordPress itself, but instea
+
+The simplest way to use it with an existing WordPress container would be something similar to the following:
+
+$ docker run -it --rm \
+    --volumes-from some-wordpress \
+    --network container:some-wordpress \
+    wordpress:cli user list
+
+Generally speaking, for WP-CLI to interact with a WordPress install, it needs access to the on-disk files of the WordPress install, and access to the database (and the easiest way to accomplish that such that wp-config.php does not require changes is to simply join the networking context of the existing and presumably working WordPress container, but there are many other ways to accomplish that which will be left as an exercise for the reader).
+License
+
+View license information for the software contained in this image.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+
+Some additional license information which was able to be auto-detected might be found in the repo-info repository's wordpress/ directory.
+  997  As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
+Docker Pull Command
+  998  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress
+  999  docker ps
+ 1000  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress
+ 1001  docker start verizon-wordpress 
+ 1002  docker ps
+ 1003  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress --vvvv
+ 1004  docker rm verizon-wordpress
+ 1005  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress --vvvv
+ 1006  docker rm verizon-wordpress
+ 1007  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8070:80 -d wordpress --vvvv
+ 1008  docker ps
+ 1009  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress --vvvv
+ 1010  docker rm verizon-wordpress
+ 1011  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress --vvvv
+ 1012  docker ps
+ 1013  docker rm verizon-wordpress
+ 1014  docker run --name verizon-wordpress -p 8080:80 -d wordpress --vvvv
+ 1015  docker ps
+ 1016* 
+ 1017  docker rm verizon-wordpress
+ 1018  docker run --name verizon-wordpress -p 8080:80 -itd wordpress 
+ 1019  docker ps
+ 1020  docker run --name verizon-wordpress -p 8080:80 -itd wordpress bash
+ 1021  docker stop verizon-wordpress
+ 1022  docker run --name verizon-wordpress -p 8080:80 -itd wordpress bash
+ 1023  docker rm verizon-wordpress
+ 1024* docker run --name verizon-wordpress -p 8080:80 -d wordpress
+ 1025  docker stop verizon-wordpress
+ 1026  docker -rm verizon-wordpress
+ 1027  docker rm verizon-wordpress
+ 1028  docker ps
+ 1029  vim docker-compose.yml
+ 1030  docker-compose up -d
+ 1031  apt-get install docker-compose
+ 1032  yum install docker-compose
+ 1033  docker-compose up -d
+ 1034  docker run -it --link verizon-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+ 1035  docker ps
+ 1036  ps -a
+ 1037  docker ps -a
+ 1038  docker run --name verizon-wordpress --link verizon-mysql:mysql -d wordpress
+ 1039  docker ps
+ 1040  ps
+ 1041  docker ps
+ 1042  docker inspect verizon-wordpress
+ 1043  docker inspect verizon-wordpress | grep IPA
+ 1044  docker ps
+ 1045  docker logs verizon-wordpress
+ 1046  docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
+ 1047  docker run -it --link verizon-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+ 1048  docker ps
+ 1049  docker stop verizon-mysql
+ 1050  docker rm verizon-mysql
+ 1051  docker run --name verizon-mysql -e MYSQL_ROOT_PASSWORD=verizon123 -d mysql:5.7
+ 1052  docker run --name verizon-wordpress --link verizon-mysql:mysql -d wordpress
+ 1053  docker rm verizon-wordpress
+ 1054  docker run --name verizon-wordpress --link verizon-mysql:mysql -d wordpress
+ 1055  docker ps
+ 1056  docker stop verizon-wordpress
+ 1057  docker rm verizon-wordpress
+ 1058  docker run --name verizon-wordpress --link verizon-mysql:mysql -p 8080:80 -d wordpress
+ 1059  docker ps
+ 1060  docker stop verizon-wordpress
+ 1061  docker stop verizon-mysql
+ 1062  ll
+ 1063  rm -f docker-compose.yml 
+ 1064  mkdir ansiblevault
+ 1065  cd ansiblevault/
+ 1066  cp ../../Day3/centos-sshd-passwordless/contacts .
+ 1067  ll
+ 1068  vim contacts 
+ 1069  ansible-vault encrypt contacts
+ 1070  vim contacts 
+ 1071  ansible-vault edit contacts
+ 1072  vim contacts 
+ 1073  ansible-vault edit contacts
+ 1074  vim contacts 
+ 1075  vim readcontacts.yml
+ 1076  ansible-playbook readcontacts.yml --ask-vault-pass
+ 1077  vim readcontacts.yml
+ 1078  ansible-playbook readcontacts.yml --ask-vault-pass
+ 1079  vim readcontacts.yml
+ 1080  ansible-playbook readcontacts.yml --ask-vault-pass
+ 1081  vim readcontacts.yml
+ 1082  ansible-playbook readcontacts.yml --ask-vault-pass
+ 1083  vim readcontacts.yml
+ 1084  vim .vpass
+ 1085  ansible-playbook readcontacts.yml --ask-vault-pass-file secret
+ 1086  ansible-playbook readcontacts.yml --ask-vault-password-file secret
+ 1087  ansible-playbook readcontacts.yml --ask-vault-password-file=secret
+ 1088  ansible-playbook readcontacts.yml --vault-password-file=secret
+ 1089  ansible-playbook readcontacts.yml --vault-password-file=.secret
+ 1090  ansible-playbook readcontacts.yml --vault-password-file=./.secret
+ 1091  ansible-playbook readcontacts.yml --vault-password-file=vpass
+ 1092  ansible-playbook readcontacts.yml --vault-password-file=.vpass
+ 1093  ansible decrypt contacts
+ 1094  ansible-vault decrypt contacts
+ 1095  ansible-vault encrypt contact --vault-password-file=/root/.ssh/id_rsa.pub
+ 1096  ansible-vault encrypt contacts --vault-password-file=/root/.ssh/id_rsa.pub
+ 1097  vim contacts 
+ 1098  ansible-playbook readcontacts.yml --vault-password-file=/root/.ssh/id_rsa.pub
+ 1099  python --version
+ 1100  python
+ 1101  vim hello.py
+ 1102  python hello.py
+ 1103  chmod +x hello.py
+ 1104  ./hello.py
+ 1105  ll
+ 1106  vim hello.py 
+ 1107  python hello.py
+ 1108  vim hello.py
+ 1109  vim hello.py 
+ 1110  python hello.py 
+ 1111  vim hello.py 
+ 1112  python hello.py 
+ 1113  vim hello.py 
+ 1114  python hello.py
+ 1115  vim hello.py 
+ 1116  python hello.py
+ 1117  vim hello.py 
+ 1118  python hello.py
+ 1119  vim hello.py 
+ 1120  python hello.py
+ 1121  vim hello.py 
+ 1122  python hello.py
+ 1123  vim fucntionparameters.py
+ 1124  python hello.py
+ 1125  python fucntionparameters.py 
+ 1126  vim fucntionparameters.py
+ 1127  python fucntionparameters.py 
+ 1128  vim fucntionparameters.py
+ 1129  python fucntionparameters.py 
+ 1130  vim fucntionparameters.py
+ 1131  python fucntionparameters.py 
+ 1132  vim fucntionparameters.py
+ 1133  vim fucntionparameters.py 
+ 1134  vim MyClass.py
+ 1135  python MyClass.py 
+ 1136  vim MyClass.py 
+ 1137  python MyClass.py 
+ 1138  vim MyClass.py 
+ 1139  python MyClass.py 
+ 1140  vim MyClass.py 
+ 1141  python MyClass.py 
+ 1142  vim MyClass.py 
+ 1143  python MyClass.py 
+ 1144  vim MyClass.py 
+ 1145  python MyClass.py 
+ 1146  vim MyClass.py 
+ 1147  cp MyClass.py inheritance.py
+ 1148  vim inheritance.py 
+ 1149  python inheritance.py 
+ 1150  vim inheritance.py 
+ 1151  python inheritance.py 
+ 1152  vim inheritance.py 
+ 1153  python inheritance.py 
+ 1154  vim inheritance.py 
+ 1155  python inheritance.py 
+ 1156  vim inheritance.py 
+ 1157  python inheritance.py 
+ 1158  vim inheritance.py 
+ 1159  python inheritance.py 
+ 1160  vim inheritance.py 
+ 1161  python inheritance.py 
+ 1162  vim inheritance.py 
+ 1163  python inheritance.py 
+ 1164  vim inheritance.py 
+ 1165  cd ..
+ 1166  mkdir dynamicinventory
+ 1167  cd dynamicinventory/
+ 1168  git clone https://github.com/tektutor/ansible-docker-dynamic-inventory.git
+ 1169  ll
+ 1170  cd ansible-docker-dynamic-inventory/
+ 1171  ll
+ 1172  vim ping.yml 
+ 1173  vim dynamic_inventory.py 
+ 1174  docker ps
+ 1175  python dynamic_inventory.py 
+ 1176  ll
+ 1177  vim dynamic_inventory.py 
+ 1178  ansible-playbook -i dynamic_inventory.py ping.yml 
+ 1179  python dynamic_inventory.py 
+ 1180  vim dynamic_inventory.py 
+ 1181  dminspect centos1
+ 1182  docker inspect centos1
+ 1183  docker inspect centos1 | grep Network
+ 1184  vim dynamic_inventory.py 
+ 1185  docker inspect centos1 | grep .NetworkSettings.IPAddress
+ 1186  docker inspect centos1 | grep IPA
+ 1187  docker inspect centos1 | grep NetworkSettings
+ 1188  vim dynamic_inventory.py 
+ 1189  python dynamic_inventory.py >> test.json
+ 1190  vim test.json 
+ 1191  vim dynamic_inventory.py 
+ 1192  cd ..
+ 1193  mkdir custom-module
+ 1194  cd custom-module/
+ 1195  ll
+ 1196  mkdir library
+ 1197  ll
+ 1198  cd library/
+ 1199  vim add.py
+ 1200  cd ..
+ 1201  vim playbook.yml
+ 1202  ansible-playbook playbook.yml 
+ 1203  vim playbook.yml
+ 1204  vim library/add.py 
+ 1205  ansible-playbook playbook.yml 
+ 1206  vim library/add.py 
+ 1207  ansible-playbook playbook.yml 
+ 1208  vim library/add.py 
+ 1209  cd ..
+ 1210  ll
+ 1211  cd ansible-docker-dynamic-inventory/
+ 1212  ll
+ 1213  vim dynamic_inventory.py 
+ 1214  python dynamic_inventory.py 
+ 1215  vim dynamic_inventory.py 
+ 1216  docker port
+ 1217  docker port centos1
+ 1218  vim dynamic_inventory.py 
+ 1219  python dynamic_inventory.py 
+ 1220  vim dynamic_inventory.py 
+ 1221  python dynamic_inventory.py 
+ 1222  vim dynamic_inventory.py 
+ 1223  python dynamic_inventory.py 
+ 1224  vim dynamic_inventory.py 
+ 1225  python dynamic_inventory.py 
+ 1226  vim dynamic_inventory.py 
+ 1227  python dynamic_inventory.py 
+ 1228  vim dynamic_inventory.py 
+ 1229  python dynamic_inventory.py 
+ 1230  vim dynamic_inventory.py 
+ 1231  python dynamic_inventory.py 
+ 1232  vim dynamic_inventory.py 
+ 1233  python dynamic_inventory.py 
+ 1234  vim dynamic_inventory.py 
+ 1235  python dynamic_inventory.py 
+ 1236  vim dynamic_inventory.py 
+ 1237  python dynamic_inventory.py 
+ 1238  vim dynamic_inventory.py 
+ 1239  python dynamic_inventory.py 
+ 1240  vim dynamic_inventory.py 
+ 1241  python dynamic_inventory.py 
+ 1242  vim dynamic_inventory.py 
+ 1243* 
+ 1244  vim dynamic_inventory.py 
+ 1245  python dynamic_inventory.py 
+ 1246  vim dynamic_inventory.py 
+ 1247  docker port centos
+ 1248  docker port centos1
+ 1249  docker port centos1 22
+ 1250  vim dynamic_inventory.py 
+ 1251  python dynamic_inventory.py 
+ 1252  vim dynamic_inventory.py 
+ 1253  python dynamic_inventory.py 
+ 1254  vim dynamic_inventory.py 
+ 1255  python dynamic_inventory.py 
+ 1256  docker port centos1 port 22
+ 1257  docker port centos1 22
+ 1258  docker ps -a
+ 1259  vim dynamic_inventory.py 
+ 1260  python dynamic_inventory.py 
+ 1261  vim dynamic_inventory.py 
+ 1262  python dynamic_inventory.py 
+ 1263  vim dynamic_inventory.py 
+ 1264  python dynamic_inventory.py 
+ 1265  vim dynamic_inventory.py 
+ 1266  python dynamic_inventory.py 
+ 1267  vim dynamic_inventory.py 
+ 1268  python dynamic_inventory.py 
+ 1269  vim dynamic_inventory.py 
+ 1270  python dynamic_inventory.py 
+ 1271  vim dynamic_inventory.py 
+ 1272  python dynamic_inventory.py 
+ 1273  vim dynamic_inventory.py 
+ 1274  python dynamic_inventory.py 
+ 1275  vim dynamic_inventory.py 
+ 1276  cd ..
+ 1277  mkdir Day5
+ 1278  cd Day
+ 1279  cd Day5/
+ 1280  ll
+ 1281  cd ..
+ 1282  cd Day4/
+ 1283  history >> Day1to4Commands.txt

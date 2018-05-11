@@ -1,0 +1,13 @@
+---
+
+- name: Demonstrates use of our brand new custom add module
+  hosts: localhost
+  tasks:
+   - name: Invoke the add custom module
+     add: firstInput=100 secondInput=200
+     register: output
+
+   - name: Print output
+     debug: var=output
+
+...

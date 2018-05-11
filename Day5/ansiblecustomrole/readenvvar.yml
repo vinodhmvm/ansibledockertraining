@@ -1,0 +1,15 @@
+---
+
+- name: Reading environment variables
+  hosts: localhost
+  vars:
+    env_path: "{{lookup('env', 'HOME_MY')}}"
+    new_path: "export $HOME_MY=/home/"
+  tasks:
+    - name: Export new variable
+      shell: "{{new_path}}"
+    
+    - name: Read and print env variable
+      debug: msg="{{env_path}}"
+
+...

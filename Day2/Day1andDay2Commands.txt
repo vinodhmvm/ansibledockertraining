@@ -1,0 +1,392 @@
+    1  yum -y install openssh-server
+    2  # yum -y install openssh-server openssh-clients
+    3   chkconfig sshd on
+    4  service sshd start
+    5  netstat -tulpn | grep :22
+    6  vi /etc/sysconfig/iptables
+    7  http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    8  weget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+    9  exit
+   10  docker images
+   11  ls
+   12  ./dind-cluster-v1.8.sh stop
+   13  clear
+   14  ls
+   15  pwd
+   16  mkdir test
+   17  cd test
+   18  docker ps
+   19  exit
+   20  yum installl curl
+   21  yum install curl
+   22  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   23  chmod +x ./kubectl 
+   24  mv ./kubectl  /usr/local/bin/kubectl
+   25  kubectl get nodes
+   26  uname -a
+   27  which kubectl
+   28  kubectl get nodes
+   29  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   30  chmod +x ./kubectl 
+   31  mv ./kubectl  /usr/local/bin/kubectl
+   32  kubectl get nodes
+   33  ls
+   34  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   35  chmod +x ./kubectl 
+   36  kubectl get nodes
+   37  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+   38  chmod +x ./kubectl 
+   39  kubectl get nodes
+   40  ./kubectl get nodes
+   41  mv ./kubectl  /usr/local/bin/kubectl
+   42  kubectl get nodes
+   43  kubectl get pods
+   44  kubectl get pods --all-namespaces
+   45  kubectl run nginx --image=nginx --replicas=4
+   46  kubectl get pods
+   47  kubectl get pods -w
+   48  ls
+   49  exit
+   50  yum install -y yum-utils device-mapper-persistent-data lvm2
+   51  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   52  yum install docker
+   53  yum install ansible
+   54  docker --version
+   55  ansible --version
+   56  docker run -it ubuntu /bin/bash
+   57  service enable docker
+   58  systemctl enable docker
+   59  systemctl start docker
+   60  docker run -it ubuntu bash
+   61  wget https://cdn.rawgit.Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   62  wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh
+   63  chmod +x dind-cluster-v1.8.sh 
+   64  ./dind-cluster-v1.8.sh up
+   65  docker --version
+   66  docker images
+   67  ./dind-cluster-v1.8.sh up
+   68  yum install docker-ce
+   69  yum remove docker.io
+   70  yum remove docker
+   71  yum install docker-ce
+   72  yum update
+   73  yum install docker-ce
+   74  yum remove docker-comon-2:1.13.1-53.git774336d.el7.centos.x86_64
+   75  yum remove docker-common-2:1.13.1-53.git774336d.el7.centos.x86_64
+   76  yum install docker-ce
+   77  docker --version
+   78  docker images
+   79  systemctl enable docker
+   80  systemctl start docker
+   81  docker images
+   82  ./dind-cluster-v1.8.sh up
+   83  kubectl get nodes
+   84  export PATH="\$HOME/.kubeadm-dind-cluster:$P" 
+   85  clear" 
+   86  clear
+   87  kubectl get pods
+   88  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+   89  yum install curl
+   90  exit
+   91  service sshd start
+   92  service sshd restart
+   93  vi /etc/systemconfig/iptables
+   94  exit
+   95  ssh -p 2000 root@192.168.20.56
+   96  clear
+   97  ls -l
+   98  exit
+   99  docker rename ubu1 ser1
+  100  docker ps
+  101  docker stop ser1
+  102  docker ps
+  103  docker stop ser2
+  104  kubectl get pods
+  105  docker ps
+  106  docker ps -a
+  107  docker images
+  108  docker ps
+  109  docker ps -a
+  110  clear
+  111  docker run -d --name nginx1 nginx
+  112  docker ps
+  113  docker history
+  114  docker history nginx1
+  115  docker inspect nginx1 | grep ip
+  116  docker inspect nginx1 | grep IPA
+  117  docker instpect -f {{.NetworkSettings,IPAddress}} nginx1
+  118  docker inspect -f {{.NetworkSettings,IPAddress}} nginx1
+  119  curl http://172.17.0.2
+  120  clear
+  121  docker ps
+  122  docker rm nginx1
+  123  docker stop nginx1
+  124  docker rm nginx1
+  125  dokcer run -d --name server1 -p 8000:80 nginx
+  126  docker run -d --name server1 -p 8000:80 nginx
+  127  netstat -ntlp
+  128  ifconfig
+  129  docker ps
+  130  docker ps -a
+  131  ifconfig
+  132  ping 192.168.20.48
+  133  docker ps
+  134  docker stop server1
+  135  docker rm server1
+  136  docker ps -a
+  137  mkdir /tmp/data
+  138  ll /tmp/
+  139  cd data
+  140  cd /tmp/data/
+  141  ll
+  142  vim /tmp/data/mydata.txt
+  143  docker run -d --name server1 -p 8000:80 -v /tmp/data:/root/data nginx
+  144  docker ps
+  145  docker inspect server1
+  146  docker exec -t server1 bash
+  147  docker exec -it server1 bash
+  148  docker ps
+  149  docker rm server1
+  150  docker stop server1
+  151  docker rm server1
+  152  docker ps -a
+  153  cd /home/
+  154  ll
+  155  cd trainer/
+  156  df -h
+  157  mkdir vinodh
+  158  cd vinodh/
+  159  mkdir Day1
+  160  cd Day1/
+  161  ll
+  162  mkdir CustomDockerImage
+  163  cd CustomDockerImage/
+  164  vim Dockerfile
+  165  docker build -t verizon/vinodhubuntu
+  166  docker build -t verizon/vinodhubuntu .
+  167  ll
+  168  docker images
+  169  docker run -it --name ubser1 verizon/vinodhubuntu
+  170  ll
+  171  docker info
+  172  cd ..
+  173  mkdir CustomAnsibleUbuntuImage
+  174  cd CustomAnsibleUbuntuImage/
+  175  ll
+  176  git clone https://github.com/tektutor/ubuntu-ansible/blob/master/Dockerfile
+  177  git clone https://github.com/tektutor/ubuntu-ansible.git
+  178  cd ubuntu-ansible/
+  179  vim Dockerfile 
+  180  clear
+  181  ss-keygen 
+  182  ssh-keygen 
+  183  vim Dockerfile 
+  184  cp /root/.ssh/id_rsa.pub authorized_keys
+  185  ll
+  186  ll /root/.ssh/
+  187  ll
+  188  vim authorized_keys 
+  189  ll
+  190  clear
+  191  docker build -t verizon/andible-ubuntu .
+  192  docker images
+  193  docker run -d --name ansibleubuntu1 -p 2000:22 -p 8000:80 verizon/andible-ubuntu
+  194  docker ps
+  195  ssh -p 2000 root@ansibleubuntu1
+  196  ssh -p 2000 root@2ecebf636a22
+  197  ssh -p 2000 root@localhost
+  198  ipconfig
+  199  ifconfig
+  200  ll
+  201  vim Dockerfile 
+  202  ls
+  203  ssh -p 2000 root@localhost
+  204  pwd
+  205  ls -l
+  206  ssh root@192.168.20.34
+  207  docker --version
+  208  docker ls
+  209  ll
+  210  clear
+  211  docker images
+  212  docker run hello-world
+  213  ifconfig
+  214  vim /etc/sysconfig/
+  215  cd /etc/sysconfig/network-scripts/
+  216  ll
+  217  vim ifcfg-ens33 
+  218  docker ps
+  219  docker pps -a
+  220  docker ps -a
+  221  docker run -it ubuntu /bin/bash
+  222  docker ps
+  223  docker run -t ubuntu /bin/bash
+  224  docker ps
+  225  docker stop 2ac316b68776
+  226  docker ps
+  227  docker run -it --name ubu1 ubuntu bash
+  228  docker ps
+  229  docker rename ubu1 server1
+  230  docker images
+  231  docker run -it ubuntu bash
+  232  docker run -it --name ubu1 ubuntu bash
+  233  docker ps -a
+  234  docker start ser1
+  235  docker ps
+  236  docker stop ser1
+  237  docker start ser1
+  238  docker exec -t ser1 bash
+  239  docker ps
+  240  docker attach ser1
+  241  docker start ser1
+  242  docker exec -t ser1 bash
+  243  ll
+  244  docker ps
+  245  docker stop ser1
+  246  docker rm ser1
+  247  docker ps -a
+  248  docker ps -q
+  249  docker ps -aq
+  250  docker rm $(docker ps -aq)
+  251  docker ps -a
+  252  docker run -d ubuntu bash
+  253  docker ps
+  254  docker ps -a
+  255  docker run -dit ubuntu bash
+  256  docker ps
+  257  docker exec -it agitated_wing
+  258  docker exec -t agitated_wing bash
+  259  docker ps
+  260  docker ps -aq
+  261  docker ps -q
+  262  docker attach agitated_wing
+  263  docker ps
+  264  docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+  265  docker ps
+  266  docker history ubuntu
+  267  docker image inspect ubuntu
+  268  docker ps -a
+  269  docker run 65bdd50ee76a485049a2d3c2e92438ac379348e7b576783669dac6f604f6241b
+  270  docker run ec75999a0cb1218bbfedeaf535afb516b739c0a2475f89d6c8bdf6ccfdf73c85
+  271  docker run 059ad60bcacfe9c03116f467f9e025f3519d1641358e0422bee478445d679313
+  272  docker info
+  273  docker stats
+  274  docker run -dit --name ser1 ubuntu
+  275  docker stats
+  276  docker run -dit --name ser2 ubuntu
+  277  docker stats
+  278  docker inspect ser1
+  279  docker inspect ser1 | greo IPAddress
+  280  docker inspect ser1 | gre IPAddress
+  281  docker inspect ser1 | grep IPAddress
+  282  ping 172.17.0.2
+  283  ifconfig
+  284  clear
+  285  cd ~
+  286  docker images
+  287  docker rm -i hello-world
+  288  docker rmi hello-world
+  289  ping 172.17.0.2
+  290  docker ps
+  291  docker ps -a
+  292  docker rm ser2
+  293  docker rm ser1
+  294  docker ps -a
+  295  docker pull nginx
+  296  docker image inspect ngixn
+  297  docker image inspect nginx
+  298  mkdir Day2
+  299  cd Day2/
+  300  ll
+  301  cd ..
+  302  ll
+  303  cd /home/trainer/vinodh/
+  304  ll
+  305  mkdir Day2
+  306  cd Day
+  307  cd Day2
+  308  ll
+  309  pwd
+  310  vim hosts
+  311  ll
+  312  rm -f :wq
+  313  ll
+  314  vim hosts 
+  315  vim /etc/hosts
+  316  vim /etc/ansible/hosts
+  317  ansible --version
+  318  apt-get update ansible
+  319  yum update ansible
+  320  rpm -qa ansible
+  321  cat hosts
+  322  docker ps
+  323  ansible -i hosts all -m ping
+  324  netstat -tunlp | grep listen
+  325  docker images
+  326  docker start verizon/andible-ubuntu
+  327  docker run verizon/andible-ubuntu
+  328  docker images
+  329  docker run -d --name=server1 verizon/andible-ubuntu
+  330  docker ps
+  331  docker rm 19d60d16b154
+  332  docker stop 19d60d16b154
+  333  docker rm 19d60d16b154
+  334  docker ps
+  335  docker stop eda48e5abac0
+  336  docker ps -a
+  337  docker ps
+  338  docker run -d --name=anisble1 -p 2000:22 -p 8000:80 verizon/andible-ubuntu
+  339  docker ps
+  340  netstat -ntlp
+  341  cd /home/trainer/
+  342  cd vinodh/
+  343  cd Day2/
+  344  ll
+  345  vim hosts 
+  346  ansible -i hosts all -m ping
+  347  vim ../Day1/CustomAnsibleUbuntuImage/ubuntu-ansible/Dockerfile 
+  348  ansible -i hosts ubuntu1 -m ping
+  349  ansible -i hosts ansible1 -m ping
+  350  ansible -i hosts ansible1 -m ping -v
+  351  ansible -i hosts ansible1 -m ping -vvv
+  352  ansible -i hosts ansible1 -m ping -vv
+  353  ansible -i hosts ansible1 -m ping -vvv
+  354  ansible -i hosts ansible1 -m ping -vvvv
+  355  ansible -i hosts ansible1 -m ping -vvvvv
+  356  ansible -i hosts ansible1 -m ping -vv
+  357  cd usr/lib/python2.7/site-packages/ansible
+  358  cd /usr/lib/python2.7/site-packages/ansible
+  359  ll
+  360  cd module
+  361  cd modules
+  362  ll
+  363  cd system/
+  364  ll
+  365  ll | grep ping
+  366  vim ping.py
+  367  cd ~/Day2/
+  368  ll
+  369  cd /home/trainer/vinodh/Day2/
+  370  ll
+  371  vim hosts
+  372  set -o vim
+  373  set -o vi
+  374  ansible -i hosts ansible1 -m shell -a "ls -l"
+  375  ansible -i hosts ansible1 -m shell -a "ls -lR"
+  376  ansible -i hosts ansible1 -m shell -a "ls -lR /"
+  377  ansible -i hosts ansible1 -m shell -a "ls -lR /tmp"
+  378  ansible -i hosts ansible1 -m shell -a "hostname"
+  379  ansible -i hosts ansible1 -m shell -a "uptime"
+  380  ansible -i hosts ansible1 -m shell -a "whoami"
+  381  ansible-doc -l
+  382  andnasdfasdfad
+  383  andasdf
+  384  :q
+  385  \\\\
+  386  
+  387  
+  388  EXIT
+  389  ifconfig
+  390  history
+  391  cd Day2/
+  392  history >> Day1andDay2Commands.txt

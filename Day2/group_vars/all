@@ -1,0 +1,5 @@
+ansible_host: localhost
+ansible_user: root
+ansible_become_user: root
+ansible_become_password: root
+ansible_private_key: /root/.ssh/id_rsa

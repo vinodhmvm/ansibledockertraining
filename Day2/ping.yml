@@ -1,0 +1,29 @@
+---
+
+- name: This playbook is my first yaml file.
+  hosts: all
+  gather_facts: False
+
+  tasks:
+    - name: ping the remote docker container
+      ping:
+  
+    - name: Hostname Check
+      shell: "hostname"
+      register: output1
+
+    - name: Print the Output
+      debug: var=output1
+
+- name: This is my second play
+  hosts: ansible2
+  gather_facts: False
+
+  tasks:
+    - name: List temp files
+      shell: "ls -lr /"
+      register: output2
+
+    - name: Print the Output
+      debug: var=output2
+...

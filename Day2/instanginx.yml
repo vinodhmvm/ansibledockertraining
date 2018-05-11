@@ -1,0 +1,43 @@
+---
+
+- name: This play book installs nginx, configures and deploys webpage in to nginx web server
+  hosts: all
+  become: yes
+  gather_facts: False
+
+  tasks:
+    - name: Install nginx web server
+      apt: name=nginx state=latest update_cache=yes
+      register: output1 
+
+    - name: Install tree
+      apt: name=tree state=latest update_cache=yes
+ 
+    - name: Configure nginx settings
+      copy: src=default dest=/etc/nginx/sites-available/default
+      register: output2
+      notify:
+        - Restart the nginx web server      
+    
+    - name: Copy main nginx.conf file
+      copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+      register: output3  
+      notify:
+        - Restart the nginx web server
+
+  handlers:
+
+    - name: Restart the nginx web server
+      command: service nginx restart
+      register: output4
+
+#    - name: Print output
+#      debug: var=output2
+
+#    - name: Print output
+#      debug: var=output3
+
+#    - name: Print output
+#      debug: var=output4
+
+...
